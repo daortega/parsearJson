@@ -14,8 +14,8 @@ body{padding: 2em;}
 
 header{
   text-align: right;
-  border-top: 2px solid #00BCD4;
-  border-bottom: 2px solid #00BCD4;
+  border-top: 1px solid #00aeef;
+  border-bottom: 1px solid #00aeef;
   height: 200px;
 }
 
@@ -65,11 +65,64 @@ p{font-size: 14px;}
         display: block;
       }
 
+  #content{padding-top: 4em;
+  }
   .linear {display: inline; float: left; padding: 0.5em;}
+  #correct .linear::after{
+    content: " ";
+    background: url(../image/circle1.svg) no-repeat 0 0;
+  /* background-size: 100% 100%; */
+    background-position: 0% 0%;
+    padding: 50px 0 20px 70px;
+    z-index: 30;
+  }
 
-  #correct{float: left; color: rgb(43, 214, 51); width: 60%;}
-  #almost-correct{float: left; color: rgb(131, 255, 51); width: 10%;}
-  #doubtful{float: left; color: rgb(235, 255, 40);  width: 10%;}
-  #incorrect{float: left; color: rgb(255, 160, 23); width: 10%;}
-  #opposite{float: left; color: rgb(255, 27, 45);  width: 10%;}
-  #no-answer{float: left; color: rgb(201, 201, 201);  width: 10%;}
+  #almost-correct .linear::after{
+    content: " ";
+    background: url(../image/circle2.svg) no-repeat 0 0;
+  /* background-size: 100% 100%; */
+    background-position: 0% 0%;
+    padding: 50px 0 20px 70px;
+    z-index: 30;
+  }
+
+  #doubtful .linear::after{
+    content: " ";
+    background: url(../image/circle3.svg) no-repeat 0 0;
+  /* background-size: 100% 100%; */
+    background-position: 0% 0%;
+    padding: 50px 0 20px 70px;
+    z-index: 30;
+  }
+
+  #incorrect .linear::after{
+    content: " ";
+    background: url(../image/circle4.svg) no-repeat 0 0;
+  /* background-size: 100% 100%; */
+    background-position: 0% 0%;
+    padding: 50px 0 20px 70px;
+    z-index: 30;
+  }
+  #opposite .linear::after{
+    content: " ";
+    background: url(../image/circle5.svg) no-repeat 0 0;
+  /* background-size: 100% 100%; */
+    background-position: 0% 0%;
+    padding: 50px 0 20px 70px;
+    z-index: 30;
+  }
+  #no-answer .linear::after{
+    content: " ";
+    background: url(../image/circle6.svg) no-repeat 0 0;
+  /* background-size: 100% 100%; */
+    background-position: 0% 0%;
+    padding: 50px 0 20px 70px;
+    z-index: 30;
+  }
+
+  #correct{float: left; width: 60%;}
+  #almost-correct{float: left; width: 10%;}
+  #doubtful{float: left;  width: 10%;}
+  #incorrect{float: left; width: 10%;}
+  #opposite{float: left;  width: 10%;}
+  #no-answer{float: left;  width: 10%;}
