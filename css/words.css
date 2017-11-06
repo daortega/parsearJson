@@ -10,9 +10,8 @@ a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, f
   vertical-align: baseline;
 }
 
-body{
-  padding: 2em;
-}
+body{padding: 2em;}
+
 header{
   text-align: right;
   border-top: 2px solid #00BCD4;
@@ -26,9 +25,51 @@ h3{font-size: 18px; font-weight: 600;}
 h4{font-size: 14px; }
 p{font-size: 14px;}
 
-section{
+#id-nombre{
+  font-size: 18px;
+  padding-bottom: 1em;
   float: left;
-  display: block;
 }
 
-.linear {display: inline; float: left; padding: 2em;}
+#id-link{
+  font-size: 12px;
+  padding: 0.5em;
+  float: right;
+}
+
+.gran-dato{font-size: 48px;}
+#mid-dato{font-size: 24px;}
+
+/* Header con análisis global del icono */
+  #identificacion{display: block;}
+
+  .info-icono{
+    padding: 3em 1em;
+    float: left;
+    width: 20%;
+    text-align:center;
+  }
+  #icono{
+    padding: 3em 4em 0em 0em;
+    float: left;
+    width: 10%;
+  }
+  #todo-respuestas{
+  text-align: center;
+  padding-top: 2em;
+}
+
+/* Sección: respuestas procesadas y ordenadas <3*/
+  section{
+        float: left;
+        display: block;
+      }
+
+  .linear {display: inline; float: left; padding: 0.5em;}
+
+  #correct{float: left; color: rgb(43, 214, 51); width: 60%;}
+  #almost-correct{float: left; color: rgb(131, 255, 51); width: 10%;}
+  #doubtful{float: left; color: rgb(235, 255, 40);  width: 10%;}
+  #incorrect{float: left; color: rgb(255, 160, 23); width: 10%;}
+  #opposite{float: left; color: rgb(255, 27, 45);  width: 10%;}
+  #no-answer{float: left; color: rgb(201, 201, 201);  width: 10%;}
