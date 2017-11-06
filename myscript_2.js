@@ -20,4 +20,7 @@ $('#plantilla').hide();
 						$(document.body).append(temp);
 						//document.getElementById("id01").innerHTML= temp;
 				}//de for
+
+
+    		console.log("Total elementos: " + data.test.pictogramas[0].respuestas[datos].id);  // (o el campo que necesites) dice 72, no es cierto :C:C 
 });
