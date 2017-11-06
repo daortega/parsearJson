@@ -1,2 +1,2 @@
 # parsearJson
-Extrayendo las 230 respuestas de 01_Man
+Extrayendo las 207 respuestas de 01_Man
