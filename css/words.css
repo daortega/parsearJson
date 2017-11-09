@@ -23,7 +23,7 @@ h1{font-size: 48px; padding-bottom: 0.4em;}
 h2{font-size: 21px;}
 h3{font-size: 18px; font-weight: 600;}
 h4{font-size: 14px; }
-p{font-size: 14px;}
+p{font-size: 14px; text-align: center;}
 
 #id-nombre{
   font-size: 18px;
@@ -39,6 +39,7 @@ p{font-size: 14px;}
 
 .gran-dato{font-size: 48px;}
 #mid-dato{font-size: 24px;}
+.icono-subtitle{padding-top: 1em;}
 
 /* Header con análisis global del icono */
   #identificacion{display: block;}
@@ -65,64 +66,91 @@ p{font-size: 14px;}
         display: block;
       }
 
-  #content{padding-top: 4em;
+  #content{padding-top: 4em;}
+  .linear {
+    display: inline;
+    float: left;
+    padding: 0.5em;
+    text-align: -webkit-center;
+    vertical-align: middle;
+    /*border: 1px solid yellow;*/
   }
-  .linear {display: inline; float: left; padding: 0.5em;}
-  #correct .linear::after{
-    content: " ";
-    background: url(../image/circle1.svg) no-repeat 0 0;
-  /* background-size: 100% 100%; */
-    background-position: 0% 0%;
-    padding: 50px 0 20px 70px;
+
+  .linear img{
+    height: 20px;
+    padding: 10px;
+  }
+  #correct .linear{
+    float: right;
+    z-index: 30;
+  }
+  #almost-correct .linear{
+    float: right;
     z-index: 30;
   }
 
-  #almost-correct .linear::after{
+  #correct{float: left; width: 70%; margin-right: -10px; border-right: 1px dashed red;}
+  #almost-correct{float: left; width: 7%; border-right: 1px dashed red;}
+  #doubtful{float: left;  width: 7%; margin-right: -10px; border-right: 1px dashed red;}
+  #incorrect{float: left; margin-right: -10px; width: 7%; color: red; border-right: 1px dashed red;}
+  #opposite{float: left;  margin-right: -10px; width: 7%; color: red; border-right: 1px dashed red;}
+  #no-answer{float: left;  padding-left: 10px; width: 7%; color: red}
+
+  .respuestas{font-size: 11px;}
+
+  #correct-etiqueta, #almost-correct-etiqueta, #doubtful-etiqueta, #incorrect-etiqueta, #opposite-etiqueta, #no-answer-etiqueta{
+    position:absolute;
+    left: 35%;
+    top: 310px;
+    z-index: 30;
+    font-weight: 600;
+  }
+  #almost-correct-etiqueta{left: 68.5%;}
+  #doubtful-etiqueta{left: 76%;}
+  #incorrect-etiqueta{left: 82%;}
+  #opposite-etiqueta{ display: none; left: 83%;}
+  #no-answer-etiqueta{left: 87.5%;}
+/*Círculos de colores */
+
+  /*#almost-correct .linear::before{
     content: " ";
     background: url(../image/circle2.svg) no-repeat 0 0;
-  /* background-size: 100% 100%; */
+  /* background-size: 100% 100%;
     background-position: 0% 0%;
     padding: 50px 0 20px 70px;
     z-index: 30;
   }
 
-  #doubtful .linear::after{
+  #doubtful .linear::before{
     content: " ";
     background: url(../image/circle3.svg) no-repeat 0 0;
-  /* background-size: 100% 100%; */
+  /* background-size: 100% 100%;
     background-position: 0% 0%;
     padding: 50px 0 20px 70px;
     z-index: 30;
   }
 
-  #incorrect .linear::after{
+  #incorrect .linear::before{
     content: " ";
     background: url(../image/circle4.svg) no-repeat 0 0;
-  /* background-size: 100% 100%; */
+  /* background-size: 100% 100%;
     background-position: 0% 0%;
     padding: 50px 0 20px 70px;
     z-index: 30;
   }
-  #opposite .linear::after{
+  #opposite .linear::before{
     content: " ";
     background: url(../image/circle5.svg) no-repeat 0 0;
-  /* background-size: 100% 100%; */
+  /* background-size: 100% 100%;
     background-position: 0% 0%;
     padding: 50px 0 20px 70px;
     z-index: 30;
   }
-  #no-answer .linear::after{
+  #no-answer .linear::before{
     content: " ";
     background: url(../image/circle6.svg) no-repeat 0 0;
-  /* background-size: 100% 100%; */
+  /* background-size: 100% 100%;
     background-position: 0% 0%;
     padding: 50px 0 20px 70px;
     z-index: 30;
-  }
-
-  #correct{float: left; width: 60%;}
-  #almost-correct{float: left; width: 10%;}
-  #doubtful{float: left;  width: 10%;}
-  #incorrect{float: left; width: 10%;}
-  #opposite{float: left;  width: 10%;}
-  #no-answer{float: left;  width: 10%;}
+  }*/
