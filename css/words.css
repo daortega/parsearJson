@@ -70,33 +70,75 @@ p{font-size: 14px; text-align: center;}
   .linear {
     display: inline;
     float: left;
-    padding: 0.5em;
+    padding: 1em 1.5em;
     text-align: -webkit-center;
     vertical-align: middle;
+    max-width: 50px;
+    max-height: 45px;
     /*border: 1px solid yellow;*/
   }
 
   .linear img{
-    height: 20px;
+    height: 8px;
     padding: 10px;
   }
   #correct .linear{
     float: right;
     z-index: 30;
+    background: url(../image/circle1.svg) no-repeat 0 0;
+    background-size: 100% 100%;
+    background-position: 50% 50%;
+    margin: -14px;
   }
   #almost-correct .linear{
     float: right;
     z-index: 30;
+    background: url(../image/circle2.svg) no-repeat 0 0;
+    background-size: 100% 100%;
+    background-position: 50% 50%;
+    margin: -14px;
+  }
+  #doubtful .linear{
+    float: right;
+    z-index: 30;
+    background: url(../image/circle3.svg) no-repeat 0 0;
+    background-size: 100% 100%;
+    background-position: 50% 50%;
+    margin: -14px;
+  }
+  #incorrect .linear{
+    float: right;
+    z-index: 30;
+    background: url(../image/circle4.svg) no-repeat 0 0;
+    background-size: 100% 100%;
+    background-position: 50% 50%;
+    margin: -14px;
+  }
+  #opposite .linear{
+    float: right;
+    z-index: 30;
+    background: url(../image/circle5.svg) no-repeat 0 0;
+    background-size: 100% 100%;
+    background-position: 50% 50%;
+    margin: -14px;
+  }
+  #no-answer .linear{
+    float: right;
+    z-index: 30;
+    background: url(../image/circle6.svg) no-repeat 0 0;
+    background-size: 100% 100%;
+    background-position: 50% 50%;
+    margin: -14px;
   }
 
-  #correct{float: left; width: 70%; margin-right: -10px; border-right: 1px dashed red;}
-  #almost-correct{float: left; width: 7%; border-right: 1px dashed red;}
-  #doubtful{float: left;  width: 7%; margin-right: -10px; border-right: 1px dashed red;}
-  #incorrect{float: left; margin-right: -10px; width: 7%; color: red; border-right: 1px dashed red;}
-  #opposite{float: left;  margin-right: -10px; width: 7%; color: red; border-right: 1px dashed red;}
-  #no-answer{float: left;  padding-left: 10px; width: 7%; color: red}
+  /*#correct{float: left; width: 75%; margin-right: -10px; }
+  #almost-correct{float: left; width: 18%; margin-left: -20px;}
+  #doubtful{float: left;  width: 19%; margin-left: -20px; }
+  #incorrect{float: left; margin-right: -15px; width: 18%; color: red;}
+  #opposite{float: left;  margin-right: -10px; width: 7%; color: red; }
+  #no-answer{float: left; width: 18%; color: red}*/
 
-  .respuestas{font-size: 11px;}
+  .respuestas {font-size: 11px;}
 
   #correct-etiqueta, #almost-correct-etiqueta, #doubtful-etiqueta, #incorrect-etiqueta, #opposite-etiqueta, #no-answer-etiqueta{
     position:absolute;
@@ -110,12 +152,21 @@ p{font-size: 14px; text-align: center;}
   #incorrect-etiqueta{left: 82%;}
   #opposite-etiqueta{ display: none; left: 83%;}
   #no-answer-etiqueta{left: 87.5%;}
-/*Círculos de colores */
+/*Círculos de colores
 
-  /*#almost-correct .linear::before{
+#correct .linear::before{
+  content: " ";
+  /*background: url(../image/circle1.svg) no-repeat 0 0;
+background-size: 100% 100%;
+  background-position: 0% 0%;
+  padding: 50px 0 20px 70px;
+  z-index: 30;
+}
+
+  #almost-correct .linear::before{
     content: " ";
-    background: url(../image/circle2.svg) no-repeat 0 0;
-  /* background-size: 100% 100%;
+    /*background: url(../image/circle2.svg) no-repeat 0 0;
+  background-size: 100% 100%;
     background-position: 0% 0%;
     padding: 50px 0 20px 70px;
     z-index: 30;
@@ -123,8 +174,8 @@ p{font-size: 14px; text-align: center;}
 
   #doubtful .linear::before{
     content: " ";
-    background: url(../image/circle3.svg) no-repeat 0 0;
-  /* background-size: 100% 100%;
+    /*background: url(../image/circle3.svg) no-repeat 0 0;
+    background-size: 100% 100%;
     background-position: 0% 0%;
     padding: 50px 0 20px 70px;
     z-index: 30;
